@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamuda Tram & Track</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gamuda Tram & Track</h1>
+        <div class="display">
+            <h2>Picture</h2>
+            <img id="picture" src="" alt="Picture will be shown here" />
+        </div>
+
+        <div class="button-grid">
+            <button class="control-button" onclick="sendCommand('A')">A</button>
+            <button class="control-button" onclick="sendCommand('B')">B</button>
+            <button class="control-button" onclick="sendCommand('C')">C</button>
+            <button class="control-button" onclick="sendCommand('D')">D</button>
+            <button class="control-button" onclick="sendCommand('E')">E</button>
+            <button class="control-button" onclick="sendCommand('F')">F</button>
+            <button class="control-button" onclick="sendCommand('G')">G</button>
+            <button class="control-button" onclick="sendCommand('H')">H</button>
+            <button class="control-button" onclick="sendCommand('I')">I</button>
+        </div>
+
+        <div class="control-section">
+            <input type="number" id="valueInput" placeholder="Enter value" />
+            <button class="submit-button" onclick="submitValue()">Submit Value</button>
+        </div>
+
+        <div class="switch-section">
+            <label for="modeSwitch">Automatic/Manual</label>
+            <input type="checkbox" id="modeSwitch" onchange="toggleMode()" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
